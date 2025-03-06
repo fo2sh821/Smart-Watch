@@ -1,0 +1,704 @@
+/* We are Support Palestine */
+/* S-Variabels */
+:root {
+    --main-font-family: 'Times New Roman', Times, serif;
+    --main-font-size: 15px;
+    --main-margin: auto;
+    --main-width: 100%;
+    --main-color-1: #333;
+    --main-color-2: #eee;
+    --main-color-3: #3498db;
+    --main-color-4: #2c3e50;
+    --main-color-5: #e74c3c;
+    --main-color-6: #fff;
+    --main-color-7: #f4f4f4;
+    --main-transition: 0.2s;
+    --main-line-height: 1.3;
+    --main-font-weight: 300
+}
+/* E-Variables */
+
+/* S-Global Rules */
+* {
+    font-family: var(--main-font-family);
+    margin: 0;
+    padding: 0;
+    transition :var(--main-transition);
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+body {
+    width: 100%;
+    margin: var(--main-margin);
+    background-color: var(--main-color-2)
+}
+h1 {
+    font-size: 1.6em;
+    text-align: center;
+    color: var(--main-color-4);
+    margin: 0.5em 0
+}
+section, article {
+    min-width: 300px;
+    min-height: 100vh;
+    padding-top: 15vh;
+    margin: auto;
+    margin-bottom: 20px;
+    overflow: hidden
+}
+li {list-style: none}
+.container {
+    padding: 0;
+    margin: var(--main-margin)
+}
+.fa-home {font-size: calc(var(--main-font-size) + 6px)}
+/* E-Global Rules */
+
+/* S-Palestine */
+.Palestine {
+    height: 10vh;
+    width: 100%;
+    margin: var(--main-margin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px
+}
+.Palestine > img {margin-left: 10px}
+/* E-Palestine */
+
+/* S-Controling links socail media */
+    .socail {
+        padding-top: 14px;
+        text-transform: capitalize;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 50%;
+        align-content: center;
+        margin: auto
+    }
+    .socail li {
+        transition: var(--main-transition);
+        margin: 0;
+        padding: 0
+    }
+    .socail li a {
+        text-decoration: none;
+        color: var(--main-color-2);
+        transition: var(--main-transition);
+        font-size: calc(var(--main-font-size) + 4px);
+        width: 28px;
+        height: 28px;
+        background-size: 30px 30px;
+        border-radius: 100%;
+        display: inline-block;
+        margin-left: 10px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0)
+    }
+    .socail li:hover a {
+        opacity: 0.9;
+        transform: scale(1.2)
+    }
+
+    /* Insert SVG file for links socail media */
+    a.instagram { background-image: url(../img/icons/instagram.svg)}
+    a.facebook {background-image: url(../img/icons/facebook.svg)}
+    a.linkedin {background-image: url(../img/icons/linkedin.svg)}
+    a.twitter {background-image: url(../img/icons/twitter.svg)}
+    a.telegram {background-image: url(../img/icons/telegram.svg)}
+    a.whatsapp {background-image: url(../img/icons/whatsapp.svg)}
+    a.github-black {background-image: url(../img/icons/github-brands-solid-black.svg)}
+    a.github-white {background-image: url(../img/icons/github-brands-solid-white.svg)}
+/* E-Controling links socail media */
+                                            /* We are Support Palestine */
+/* S-Header */
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transform: translate(0, 0);
+        background-color: #ffffff8f;
+        width: 100%;
+        margin: var(--main-margin);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        border-radius: 3px
+    }
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+    header .container .logo {margin-left: 10px}
+    header .container .logo img {
+        border-radius: 50%;
+        width: 80px;
+        padding: 4px
+    }
+    .link {
+        margin-right: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: end;
+        position: relative
+    }
+    .link .icon {
+        border: solid var(--main-color-1) 0.2px;
+        width: 15%;
+        outline: 0;
+        padding: 10px;
+        border-radius: 5px
+    }
+    .link .icon:hover {background-color: var(--main-color-1)}
+    .link .icon span {
+        background-color: var(--main-color-1);
+        height: 2px;
+        padding: 0;
+        margin-bottom: 3px
+    }
+    .link .icon:hover span{background-color: var(--main-color-2)}
+    .link .icon span:first-child {width: 100%}
+    .link .icon span:nth-child(2) {
+        width: 65%;   
+        transition: var(--main-transition)
+    }
+    .link .icon span:nth-child(3) {width: 100%}
+    .link .icon:hover span:nth-child(2) {width: 100%}
+    .link .header-links {
+        display: none;
+        align-items: center;
+        z-index: 999
+    }
+    .link .header-links li {padding: 6px}
+    .link .header-links li a {
+        font-family: "Work Sans", serif;
+        font-size: calcl(var(--main-font-size) + 4px);
+        font-weight: 800;
+        padding: 12px;  
+        text-decoration: none;
+        color: var(--main-color-1);
+        transition: 0.7s;
+        -moz-transition: 0.7s
+    }
+        /* S-Product-link */
+        .l {position: relative}
+        ol.links-product {display: none}
+        /* E-Product-link */
+/* E-Header */
+                                            /* We are Support Palestine */
+/* S-Main */
+main {
+    margin: 0;
+    padding: 0
+}
+    /* S-Home-Page */
+        .home-page {
+            background-image: url(../img/main-img/mountain.jpeg);
+            background-size: cover;
+            position: relative;
+            height: 100vh;
+            color: var(--main-color-2)
+        }
+        .home-page .container {
+            min-width: 350px;
+            width: calc(var(--main-width) - 30%);
+            background: #ffffff65;
+            -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+            border: 1px solid rgba(255, 255, 255, 0.171);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            border-radius: 20px;
+            color: var(--main-color-1);
+            padding: 10px
+        }
+        .home-page .container h1 {
+            font-size: calc( var(--main-font-size) + 35px);
+            width: 20ch;
+            margin: auto;
+            text-align: center;
+            font-family: monospace;
+            text-wrap: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(30) infinite alternate-reverse
+        }
+        @keyframes typing {from {width: 0ch}}
+        .home-page .container p {
+            margin: auto;
+            font-size: calc( var(--main-font-size) + 8px);
+            text-align: left
+        }
+        .home-page .container p span {
+            font-weight: bolder;
+            color: var(--main-color-4)
+        }
+        .home-page .container h6 {
+            font-size: calc( var(--main-font-size) + 9px);
+            font-weight: var(--main-font-weight)
+        }
+        .home-page .container ul li:hover a {
+            opacity: 0.9;
+            transform: scale(1.2)
+            
+        }
+    /* E-Home-Page */
+                                            /* We are Support Palestine */
+    /* S-About-Us */
+        .about-us {
+            display: flex;
+            margin-bottom: 0;
+            padding-top: 0
+        }
+        .about-us .container {
+            line-height: var(--main-line-height);
+            font-family: Arial, sans-serif;
+            font-weight: var(--main-font-weight);
+            width: calc( var(--main-width) - 15%);
+            margin: auto;
+            padding: 25px 20px 40px 55px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff49;
+            color: var(--main-color-1);
+            background: url(/scr/img/icons/About-us.svg) no-repeat center fixed;
+            background-size: cover;
+            text-wrap: balance;
+            font-size: 22px
+        }
+        .about-us .container h1 {
+            text-align: center;
+            margin-top: 0
+        }
+        .about-us .container h2 {
+            font-size: calc(var(--main-font-size) + 3px);
+            color: var(--main-color-3);
+            margin-top: 20px;
+            margin-left: -20px
+        }
+        .about-us .container p {
+            font-size: calc(var(--main-font-size) + 1px);
+            text-wrap: balance;
+            line-height: var(--main-line-height)
+        }
+        .about-us .container p.special {
+            text-align: center;
+            color: var(--main-color-3);
+            font-weight: 300;
+            padding-top: 25px
+        }
+        .about-us .container ul {
+            width: 100%;
+            list-style: none;
+            padding: 0
+        }
+        .about-us .container ul li {
+            width: 100%;
+            font-size: calc(var(--main-font-size) + 1px);
+            margin: 10px 0
+        }
+        .about-us .container ul li span.highlight {
+            font-weight: bold;
+            color: var(--main-color-5)
+        }
+    /* E-About-Us */
+                                            /* We are Support Palestine */
+    /* S-products */
+        .products {display: flex}
+        .products .container {
+            line-height: var(--main-line-height);
+            font-family: Arial, sans-serif;
+            font-weight: var(--main-font-weight);
+            width: calc( var(--main-width) - 20%);
+            margin: auto;
+            padding: 25px 20px 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff49;
+            color: var(--main-color-1);
+            text-wrap: balance
+        }
+        .products .container h1, .products .container h2 {
+            text-align: center;
+            margin-top: 0
+        }
+        .products .container h2:hover {color: red;}
+        .products .container > p {
+            width: calc(var(--main-width) - 5%);
+            padding: 20px 0;
+            margin: var(--main-margin);
+            font-size: calc(var(--main-font-size) + 0);
+            line-height: var(--main-line-height)
+        }
+        .products .container p.special {
+            text-align: center;
+            color: var(--main-color-3);
+            font-weight: 300;
+            padding-top: 25px
+        }
+        article .cards {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center
+        }
+        /* S-Card */
+            .card {
+                overflow: hidden;
+                min-width: 310px;
+                max-width: 450px;
+                height: 250px;
+                margin: var(--main-margin);
+                border: var(--main-color-4) 0.5px solid;
+                border-radius: 12px;
+                margin: 10px;
+                transition: var(--main-transition);
+                position: relative
+            }
+            .card:hover {
+                transform: scale(1.01);
+                border: none;
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.507);
+                background-color: #ffffff49;
+                background-color: var(--main-color-6)
+            }
+            /* ================img================ */
+            .card > img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 10px;
+                border-radius: 50%
+            }
+            /* ================price================ */
+            .card .price {
+                text-transform: capitalize;
+                position: absolute;
+                bottom: -30px;
+                left: 10px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 50%;
+                margin: 3px
+            }
+            .card:hover .price {bottom: 10px}
+            .card .price p {
+                font-size: 14px;
+                text-transform: capitalize;
+                font-weight: bold
+            }
+            .card .price del {
+                color: var(--main-color-5);
+                font-size: 14px
+            }
+            /* ================details================ */
+            .card .details {
+                position: absolute;
+                top: 35px;
+                right: 4px;
+                text-align: right
+            }
+            .card .details h4 {font-weight: bold}
+            .card .details .info {
+                width: 200px;
+                display: block;
+                text-align: right
+            }
+            /* ================available================ */
+            .card .available {
+                position: absolute;
+                bottom: -50px;
+                right: 10px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 30%
+            }
+            .card:hover .available {bottom: 10px}
+            .card .available > i.fa, .card .available > i.fab, .card .available > img {transition: var(--main-transition)}
+            .card .available > i.fa:hover, .card .available > i.fab:hover, .card .available > img:hover {
+                opacity: 0.9;
+                transform: scale(1.2)
+            }
+            /* ================buttons================ */
+            .card .buttons {
+                position: absolute;
+                bottom: -50px;
+                left: 155px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 16%
+            }
+            .card:hover .buttons {
+                bottom: 10px;
+                border: 1px solid gray;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.507);
+                background-color: #ffffff49;
+                padding: 4px
+            }
+            .card .buttons > i.fa, .card .buttons > i.fab {transition: var(--main-transition)}
+            .card .buttons > i.fa:hover, .card .buttons > i.fab:hover {
+                opacity: 0.9;
+                transform: scale(1.2)
+            }
+        /* E-Cards */
+    /* E-products */
+                                            /* We are Support Palestine */
+    /* S-Services */
+    .services {
+        display: flex;
+        margin-bottom: 0;
+        padding-top: 0;
+        background: url(/scr/img/icons/services.svg) no-repeat center fixed;
+        background-size: cover
+    }
+    .services .container {
+        line-height: var(--main-line-height);
+        font-family: Arial, sans-serif;
+        font-weight: var(--main-font-weight);
+        width: calc( var(--main-width) - 25%);
+        margin: auto;
+        padding: 25px 20px 40px 55px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff49;
+        color: var(--main-color-1);
+        text-wrap: balance
+    }
+    .services .container h1 {
+        text-align: center;
+        font-size: 1.7em;
+        margin-top: 0
+    }
+    .services .container h2 {
+        font-size: calc(var(--main-font-size) + 3px);
+        color: var(--main-color-3);
+        margin-top: 20px;
+        margin-left: -20px
+    }
+    .services .container p {
+        font-size: calc(var(--main-font-size) + 1px);
+        text-wrap: balance;
+        line-height: var(--main-line-height)
+    }
+    .services .container p.special {
+        text-align: center;
+        color: var(--main-color-3);
+        font-weight: 300;
+        padding-top: 25px
+    }
+    .services .container ul {
+        width: 100%;
+        list-style: none;
+        padding: 0
+    }
+    .services .container ul li {
+        text-wrap: wrap;
+        font-size: calc(var(--main-font-size) + 1px);
+        margin: 10px 0
+    }
+    .services .container ul li span.highlight {
+        font-weight: bold;
+        color: var(--main-color-5)
+    }
+    /* E-Services */
+                                            /* We are Support Palestine */
+    /* S-Contact-us */
+    .contact-us {
+        display: flex;
+        margin-bottom: 0;
+        padding-top: 10vh;
+        padding-bottom: 30px
+    }
+    .contact-us .container {
+        line-height: var(--main-line-height);
+        font-family: Arial, sans-serif;
+        font-weight: var(--main-font-weight);
+        width: calc( var(--main-width) - 25%);
+        margin: auto;
+        padding: 25px 20px 40px 55px;
+        background-color: var(--main-color-7);
+        background: var(--main-color-6);
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: var(--main-color-1);
+        text-wrap: balance
+    }
+    .contact-us .container h1 {
+        text-align: center;
+        font-size: 1.7em;
+        margin-top: 0
+    }
+    .contact-us .container h2 {
+        font-size: calc(var(--main-font-size) + 3px);
+        color: var(--main-color-3);
+
+        margin-top: 20px;
+        margin-left: -20px
+    }
+    .contact-us .container p {
+        font-size: calc(var(--main-font-size) + 1px);
+        text-wrap: wrap;
+        margin: 12px 0;
+        line-height: 1.4
+
+    }
+    .contact-us .container p.special {
+        text-align: center;
+        color: var(--main-color-3);
+        font-weight: 300;
+        padding-top: 25px
+    }
+                                            /* We are Support Palestine */
+        /* S-Form */
+        .form {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly
+        }
+        .comment {
+            width: 100%;
+            padding: 15px;
+            display: block;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center
+        }
+        .comment li {
+            padding-top: 10px;
+            margin-left: 5px;
+            list-style: decimal
+        }
+        .form form {
+            max-width: 400px;
+            width: calc( var(--main-width) - 40%);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.3em;
+            margin: auto;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+            border-image: initial;
+            padding: 20px
+        }
+        .form form h3 {
+            display: block;
+            width: var(--main-width);
+            text-align: center;
+            font-size: calc(var(--main-font-size) + 4px)
+        }
+        .form label {
+            color: var(--main-color-3);
+            padding: 10px 0 ;
+            display: block;
+            width: calc( var(--main-width) - 7% );
+            margin: auto;
+            text-align: left;
+            outline: none
+        }
+        .form form input {
+            text-transform: none;
+            display: block;
+            width: calc( var(--main-width) - 7% );
+            height: 35px;
+            outline: 0;
+            margin: auto;
+            padding: 4px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+        }
+        .form form #comment {
+            display: block;
+            font-family: inherit;
+            font-size: var(--main-font-size);
+            line-height: 1.15;
+            width: calc( var(--main-width) - 7% );
+            outline: 0;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+        }
+        .form form #button {
+            transition: 0.9s;
+            background-color: #eee;
+            width: 40%;
+            height: 6vh;
+            margin: 12px auto
+        }
+        .form form #button:hover {
+            border: none;
+            background-color: var(--main-color-1);
+            color: var(--main-color-6)
+        }
+        /* E-Form */
+    /* E-Contact-us */
+/* E-Main */
+                                            /* We are Support Palestine */
+/* S-Footer */
+    footer {
+        overflow: hidden;
+        background-color: black;
+        color: #eee;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 7vh;
+        position: fixed;
+        border-radius: 5px;
+        bottom: 1px;
+        z-index: 21
+    }
+    footer .social-buttom {
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+        align-items: center
+    }
+    footer .social-buttom p { 
+        font-size: 16px;
+        text-align: end;
+        width: 35%
+    }
+    footer .social-buttom  .socail {
+        height: 4vh;
+        display: flex;
+        width: 80%;
+        margin: auto;
+        padding: 3px;
+        margin-bottom: 4px;
+        justify-content: space-evenly;
+        align-items: center
+    }
+    footer .mylogo{
+        color: var(--main-color-2);
+        width: 20%;
+        font-size: 14px;
+        text-align: center;
+        text-transform: capitalize
+    }
+    footer .mylogo a {color: var(--main-color-2)}
+/* E-Footer */
+                                            /* We are Support Palestine */
